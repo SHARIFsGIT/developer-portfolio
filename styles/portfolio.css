@@ -17,7 +17,8 @@
 }
 .header {
   background: #fff8f3;
-  background-image: url("../images/header_bg.png"), url("../images/developer.png");
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
   background-position: bottom right, left;
 }
@@ -34,6 +35,9 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
+  color: var(--Dark-02, #474747);
+  font-size: 20px;
+  font-weight: 600;
 }
 nav li {
   list-style: none;
@@ -67,10 +71,10 @@ nav li {
   color: #fd6e0a;
   font-size: 20px;
   font-weight: 700;
-  background-image: url("../images/icons/Frame.png");
-  background-repeat: no-repeat;
-  background-position: left center;
   border: 0;
+  background: #fff8f3;
+  border-radius: 5px;
+  border: 1px solid #fd6e0a;
 }
 /* main section */
 main {
@@ -120,6 +124,9 @@ main {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 50px;
+  text-align: center;
+  padding-left: 145px;
+  width: 909px;
 }
 .skill {
   border-radius: 5px;
@@ -144,48 +151,59 @@ main {
   font-weight: 400;
 }
 /* resume styles */
-.resume_container{
+.resume_top_title {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 100px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.resume_container {
   display: flex;
   gap: 24px;
 }
-.resume_item{
+.resume_item {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.resume_container .title{
+.resume_container .title {
   color: #474747;
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.resume_container .subtitle{
+.resume_container .subtitle {
   color: #757575;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-.resume_container .discription{
+.resume_container .discription {
   color: #757575;
   font-size: 16px;
 }
-.resume_btn{
+.resume_btn {
   margin-top: 50px;
   text-align: center;
+  margin-bottom: 113px;
 }
 /* contract styles */
-.contract{
+.contract {
   display: flex;
   gap: 100px;
-  background-color: #FFF8F3;
+  background-color: #fff8f3;
   padding: 130px 200px;
 }
-.contract a{
+.contract a {
   text-decoration: none;
+  margin-right: 24px;
 }
-.contract .section_title{
+.contract .section_title {
   text-align: left;
 }
-.contract input[type="text"], input[type="email"], textarea{
+.contract input[type="text"],
+input[type="email"],
+textarea {
   margin-bottom: 24px;
   border: 0;
   width: 100%;
